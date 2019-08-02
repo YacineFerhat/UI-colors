@@ -2,7 +2,7 @@ export default [
     {
         paletteName : 'Material UI Colors',
         id :'material-ui-colors',
-        emojis :'🎨',
+        emoji :'🎨',
         colors : [
             {name : 'red', color: '#F44336'},
             {name : 'pink', color: '#E91E63'},
@@ -28,7 +28,7 @@ export default [
     {
         paletteName : 'Flat UI Colors v1',
         id :'flat-ui-colors-v1',
-        emojis :'🤙',
+        emoji :'🤙',
         colors : [
             {name : 'Turquoise', color: '#1abc9c'},
             {name : 'Emerale', color: '#2ECC71'},
@@ -55,7 +55,7 @@ export default [
     {
         paletteName : 'Flat UI Colors Dutch',
         id :'flat-ui-colors-dutch',
-        emojis :'🇳🇱',
+        emoji :'🇳🇱',
         colors : [
             {name : 'Sunflower', color: '#ffc312'},
             {name : 'Emergos', color: '#C4E538'},
@@ -83,7 +83,7 @@ export default [
     {
         paletteName : 'Flat UI Colors American',
         id :'flat-ui-colors-american',
-        emojis :'🇺🇸',
+        emoji :'🇺🇸',
         colors : [
             {name : 'LightGreenIsBlue', color: '#55efc4'},
             {name : 'FadedPoster', color: '#81ecec'},
@@ -111,7 +111,7 @@ export default [
     {
         paletteName : 'Flat UI Colors Aussie',
         id :'flat-ui-colors-aussie',
-        emojis :'🇦🇺',
+        emoji :'🇦🇺',
         colors : [
             {name : 'Beekeeper', color: '#f6e58d'},
             {name : 'SpicedNectarine', color: '#ffbe76'},
@@ -139,7 +139,7 @@ export default [
     {
         paletteName : 'Flat UI Colors British',
         id :'flat-ui-colors-british',
-        emojis :'"🇬🇧',
+        emoji :'"🇬🇧',
         colors : [
             {name : 'PotossPylon', color: '#00a8ff'},
             {name : 'Perinwinkle', color: '#9c88ff'},
@@ -194,7 +194,7 @@ export default [
     {
         paletteName : 'Flat UI Colors Canada',
         id :'flat-ui-colors-Canada',
-        emojis :'',
+        emoji :'',
         colors : [
             {name : 'Jifflypuff', color: '#ff9ff3'},
             {name : 'LianHongLotusPink', color: '#f368e0'},
@@ -250,7 +250,7 @@ export default [
     {
         paletteName : 'Flat UI Colors French',
         id :'flat-ui-colors-french',
-        emojis :"🇫🇷",
+        emoji :"🇫🇷",
         colors : [
             {name :'FlatFlesh' , color :'#fad390'},
             {name :'SquashBlossom' , color :'#f6b93b'},
