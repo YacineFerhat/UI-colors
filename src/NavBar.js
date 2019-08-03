@@ -37,7 +37,7 @@ class NavBar extends Component{
     }
 
     render() {
-        const {handleChange, levels, changelevel} = this.props
+        const {showingSlider, levels, changelevel} = this.props
         const {format} = this.state
         return (
             <header className="NavBar">
@@ -46,6 +46,7 @@ class NavBar extends Component{
                         reactColorPicker
                     </Link>
                 </div>
+                {showingSlider &&
                 <div className="SliderContainer">
                     <span>Level : {levels}</span>
                 
@@ -58,6 +59,7 @@ class NavBar extends Component{
                             defaultValue={levels} />
                     </div>
                 </div>
+                }
                 <div className='SelectContainer'>
                     <Select value={format} onChange={this.handleFormatChange}>
                         <MenuItem value='hex'> Hex #ffffff</MenuItem>

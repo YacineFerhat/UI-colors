@@ -1,3 +1,10 @@
+.LightText{
+    color : white;
+}
+.ColorBox .DarkText{
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .ColorBox{
     width: 20%;
     height: 25%;
@@ -7,8 +14,9 @@
     cursor:  pointer;
     margin-bottom: -3.5px;
 }
-
-.CopyButton{
+ 
+.CopyButton,
+.GoBackButton{
     width: 100px;
     height: 30px;
     position: absolute;
@@ -25,10 +33,13 @@
     color: white;
     text-transform: uppercase;
     border: none;
-    opacity: 0;
+    text-decoration: none;
 }
 
-.ColorBox:hover.CopyButton{
+.CopyButton{
+    opacity: 0;
+}
+.ColorBox:hover .CopyButton{
     opacity: 1;
     transition: 0.5s;
 }
@@ -112,3 +123,12 @@
     font-weight: 100;
     font-size: 2rem;
 }
+ 
+.SingleColorPalette .ColorBox{
+    height: 50%; 
+}
+
+.GoBack.ColorBox{
+background-color: black;
+}
+
