@@ -5,11 +5,11 @@ import Snackbar from '@material-ui/core/Snackbar'
 import CloseIcon from '@material-ui/icons/Close'
 import IconButton from '@material-ui/core/IconButton'
 import {Link} from 'react-router-dom'
-
+import {withStyles} from '@material-ui/styles'
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
-import './NavBar.css'
 
+import styles from './styles/Navbar.styles'
 
 class NavBar extends Component{
     constructor(props){
@@ -37,20 +37,20 @@ class NavBar extends Component{
     }
 
     render() {
-        const {showingSlider, levels, changelevel} = this.props
+        const {showingSlider, levels, changelevel, classes} = this.props
         const {format} = this.state
         return (
-            <header className="NavBar">
-                <div className="Logo">
+            <header className={classes.NavBar}>
+                <div className={classes.Logo}>
                     <Link to="/">
                         reactColorPicker
                     </Link>
                 </div>
                 {showingSlider &&
-                <div className="SliderContainer">
+                <div>
                     <span>Level : {levels}</span>
                 
-                    <div className="Slider">
+                    <div className={classes.Slider}>
                         <Slider                     
                             step={100}
                             onAfterChange={changelevel}
@@ -60,7 +60,7 @@ class NavBar extends Component{
                     </div>
                 </div>
                 }
-                <div className='SelectContainer'>
+                <div className={classes.SelectContainer}>
                     <Select value={format} onChange={this.handleFormatChange}>
                         <MenuItem value='hex'> Hex #ffffff</MenuItem>
                         <MenuItem value='rgb'> rgb(255,255,255)</MenuItem>
@@ -91,4 +91,4 @@ class NavBar extends Component{
     }
 }
 
-export default NavBar 
+export default withStyles(styles)(NavBar) 
