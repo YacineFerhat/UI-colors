@@ -6,14 +6,15 @@ export default {
         padding : '0.5rem',
         position : 'relative',
         overflow :'hidden',
-        '&:hover': {
-            cursor : 'pointer'
+        cursor : 'pointer',
+        '&:hover svg': {
+            opacity : 1
         }
     },
 
     colors :{
         backckgroundColor : 'grey',
-        height : '150px',
+        height : '100px',
         width: '100%',
         borderRadius: '5px',
         overflow : 'hidden'
@@ -42,5 +43,17 @@ export default {
        margin: '0 auto',
         position :'relative',
         marginBottom : '-4px'
+    },
+    deleteIcon : {
+        color : 'white',
+        backckgroundColor :'#eb3d30',
+        width : '20px',
+        height : '20px',
+        position : 'absolute',
+        right : '0px',
+        top : '0px',
+        padding : '10px',
+        zIndex : 10,
+        opacity : 0,
     }
 }
