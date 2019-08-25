@@ -31,7 +31,7 @@ class ColorBox extends Component{
               />
               <div className={`${classes.CopyMessage} ${copied && classes.ShowMessage}`}>
                 <h1>copied!</h1>
-                <p className={classes.CopyText}>{this.props.background}</p>
+                <p className={classes.CopyText}>{background}</p>
               </div>
               <div>
                 <div className={classes.BoxContent}>

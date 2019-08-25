@@ -56,6 +56,7 @@ class PopUpp extends Component {
             emoji : emoji.native
         }
         this.props.handleSubmit(newPalette)
+        this.setState({stage : ''})
     }
     render(){
         const {newPaletteName,stage} = this.state

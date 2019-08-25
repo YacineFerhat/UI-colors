@@ -24,7 +24,6 @@ const styles = theme => ({
     },
     content: {
       height:'calc(100vh - 64px)',
-      padding : 0,
       flexGrow: 1,
       padding: theme.spacing(3),
       transition: theme.transitions.create('margin', {
